@@ -15,4 +15,14 @@ public class PlayerInteractions : MonoBehaviour
     {
         
     }
+
+    private void OnCollisionEnter(Collision col)
+    {
+        Debug.Log(col.gameObject.name);
+        if (col.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Enemigo: " + col.gameObject.GetComponent<EnemyScript>().enemyData.name);
+        }
+    }
+
 }
