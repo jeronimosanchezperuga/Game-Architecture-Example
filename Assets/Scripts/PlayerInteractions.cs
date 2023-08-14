@@ -21,7 +21,9 @@ public class PlayerInteractions : MonoBehaviour
         Debug.Log(col.gameObject.name);
         if (col.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Enemigo: " + col.gameObject.GetComponent<EnemyScript>().enemyData.name);
+            SOEnemy enemy = col.gameObject.GetComponent<EnemyScript>().enemyData;
+            Debug.Log("Enemigo: " + enemy.name);
+            GetComponent<HealthManager>().ReduceHealth(enemy.hitPoints);
         }
     }
 
