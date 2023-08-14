@@ -477,6 +477,7 @@ GameObject:
   - component: {fileID: 1049339926}
   - component: {fileID: 1049339925}
   - component: {fileID: 1049339924}
+  - component: {fileID: 1049339927}
   m_Layer: 0
   m_Name: '[PLAYERINTERACTIONS]'
   m_TagString: Untagged
@@ -540,6 +541,19 @@ CapsuleCollider:
   m_Height: 1.8196096
   m_Direction: 1
   m_Center: {x: 0, y: -0.0049152374, z: 0}
+--- !u!114 &1049339927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049339922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e554796cd6cdded46b1571c530a8f2b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
 --- !u!1 &1065306565
 GameObject:
   m_ObjectHideFlags: 0
